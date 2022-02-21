@@ -1,0 +1,8 @@
+Feature: Delete API Demo
+
+  Scenario: Delete Demo 1
+    Given url 'https://reqres.in/api/users/2'
+    When request 'https://reqres.in/api/users/2'
+    And method DELETE
+    Then status 204
+    And print response
